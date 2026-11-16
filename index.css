@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+header {
+    background-color: #061525;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: indigo;
+}
+
+.logo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFD580;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+
+}
+
+.logo p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #E0F7FA;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: #00E5FF;
+    padding-right: 20px;
+}
+
+.links a {
+    color: #00E5FF;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s ease-in-out;
+    margin-left: 20px;
+}
+
+.links a:hover {
+    background-color: black;
+    padding: 5px 10px;
+    border: 1px solid #00E5FF;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.0em;
+
+}
+
+body {
+    height: 500vh;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    background-image: url(../mine/bck.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 20px 20px;
+}
+
+#home .intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    color: white;
+}
+
+#home .intro h1 {
+    font-family: 'Orbitron',sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFD580;
+}
+
+#home .intro p {
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #E0F7FA;
+}
+
+#aboutus {
+    min-height: 100vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    background-color: #061525;
+    padding: 100px 10%;
+    padding-top: 100px;
+    padding-right: 150px;
+}
+
+.abouttext {
+    flex: 1;
+}
+
+#aboutus h3 {
+    color: #00E5FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#aboutus p {
+    color: #E0F7FA;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#aboutus img {
+    width: 500px;
+    height: 600px;
+    border: 2px solid #00E5FF;
+    border-radius: 15px;
+    border-color: black;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+
+#courses {
+    min-height: 100vh;
+    background-color:#061525;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 10%;
+    color: white;
+    box-sizing: border-box;
+}
+
+#courses h2{
+    color: #FFD580;
+    margin-bottom: 30px;
+}
+.coursecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.coursecard {
+    background-color: #0B2238;
+    width: 45%;
+    padding: 40px;
+    border: 1px solid #00E5FF;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.coursecard h3{
+    color: #FFD580;
+    margin-top: 0;
+}
+
+.coursecard p{
+    color:#E0F7FA;
+    line-height: 1.6;
+}
+.courselist {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    width: 92%;
+}
+
+.listbox { 
+    flex: 1;
+    background-color:#0B2238;
+    padding: 30px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    box-sizing: border-box;
+}
+
+.listbox h3 {
+    font-size: 26px;
+    color: #00E5FF;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.listbox ul,
+.listbox ol{
+    padding-left: 20px;
+    margin: 0;
+}
+    
+.listbox li{
+    color: #E0F7FA;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+.courselist li {
+    color: #E0F7FA;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.courselist li:hover {
+    color: #00E5FF;
+}
+
+.listbox li:hover{
+    color: #00E5FF;
+}
+
+
+
+#timetable {
+    min-height: 100vh;
+    background-color: #061525;
+    padding: 100px 8% 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+#timetable table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    min-width: 650px;
+}
+
+#timetable caption {
+    color: #FFD580;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#timetable th {
+    background-color: #061525;
+    color: #061525;
+    padding: 18px;
+    text-align: left;
+}
+
+#timetable td {
+    padding: 16px;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    color: #E0F7FA;
+}
+
+#timetable tbody tr:hover {
+    background-color: rgba(0, 299, 255, 0.1);
+}
+
+#registration {
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+        linear-gradient(
+        rgba(6, 21, 37, 0.65),
+        rgba(6, 21, 37, 0.65)), url(../mine/ict6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 8% 60px;
+    box-sizing: border-box;
+}
+
+#registration form {
+    width: 100%;
+    max-width: 750px;
+    background-image: url(../mine/bckk.jpg);
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #00E5FF;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    color:#FFD580;
+}
+#footer{
+    background-color: #061525;
+    color: #E0F7FA;
+    text-align: center;
+    padding: 20px;
+}
+
+#home,
+#aboutus,
+#courses,
+#timetable {
+    border-bottom: 2px solid #00E5FF;
+}
+
